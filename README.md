@@ -7,8 +7,13 @@ version 0.12.1.
 
 ## Setup
 
+The following should get you up and running.
+
 1) Install NodeJS and npm
 2) Install ruby (required for SASS)
+3) npm install -g grunt-cli bower yo generator-karma generator-angular
+4) npm install
+5) bower install
 
 ## Build & development
 
