@@ -14,7 +14,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngTouch',
-    'leaflet-directive'
+    'leaflet-directive',
+    'openlayers-directive'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -32,6 +33,11 @@ angular
         templateUrl: 'views/leafletexample.html',
         controller: 'LeafletexampleCtrl',
         controllerAs: 'leaflet'
+      })
+      .when('/openlayers', {
+        templateUrl: 'views/openlayersexample.html',
+        controller: 'OpenlayersexampleCtrl',
+        controllerAs: 'openlayers'
       })
       .otherwise({
         redirectTo: '/'
