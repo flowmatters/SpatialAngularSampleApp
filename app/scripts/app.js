@@ -13,7 +13,8 @@ angular
     'ngAnimate',
     'ngResource',
     'ngRoute',
-    'ngTouch'
+    'ngTouch',
+    'leaflet-directive'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -26,6 +27,11 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+      .when('/leaflet', {
+        templateUrl: 'views/leafletexample.html',
+        controller: 'LeafletexampleCtrl',
+        controllerAs: 'leaflet'
       })
       .otherwise({
         redirectTo: '/'
